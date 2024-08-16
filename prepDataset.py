@@ -3,8 +3,8 @@ import librosa
 import math
 import json
 
-DATASET_PATH = "generes_reduces"
-JSON_PATH = "Data.json"
+DATASET_PATH = "genres_original"
+JSON_PATH = "Data_full.json"
 
 SAMPLE_RATE=22050
 DURATION=30
