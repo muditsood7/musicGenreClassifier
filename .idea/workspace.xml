@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00feb99b-aca9-4428-9157-7c0f8f953d00" name="Changes" comment="implemented network">
+    <list default="true" id="00feb99b-aca9-4428-9157-7c0f8f953d00" name="Changes" comment="added changes to reduce overfitting">
+      <change afterPath="$PROJECT_DIR$/genre_classifier_cnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genre_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/genre_classifier.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.genre_classifier.executor": "Run",
-    "Python.prepDataset.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mudit/PycharmProjects/musicGenreClassifier",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.genre_classifier.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepDataset.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mudit/PycharmProjects/musicGenreClassifier&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mudit\PycharmProjects\musicGenreClassifier\generes_reduces" />
@@ -115,7 +115,8 @@
       <updated>1722916677021</updated>
       <workItem from="1722916678856" duration="6841000" />
       <workItem from="1723774877068" duration="3436000" />
-      <workItem from="1724030211479" duration="2968000" />
+      <workItem from="1724030211479" duration="3563000" />
+      <workItem from="1724116826299" duration="3705000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, began preparing dataset processing">
       <option name="closed" value="true" />
@@ -141,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723778421758</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added changes to reduce overfitting">
+      <option name="closed" value="true" />
+      <created>1724116766111</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724116766111</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +160,8 @@
     <MESSAGE value="initial commit, began preparing dataset processing" />
     <MESSAGE value="finished dataset processing" />
     <MESSAGE value="implemented network" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented network" />
+    <MESSAGE value="added changes to reduce overfitting" />
+    <option name="LAST_COMMIT_MESSAGE" value="added changes to reduce overfitting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
