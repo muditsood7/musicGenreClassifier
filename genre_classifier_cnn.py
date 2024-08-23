@@ -3,8 +3,6 @@ import numpy as np
 import tensorflow.keras as keras
 from sklearn.model_selection import train_test_split
 
-
-
 DATASET_PATH = "Data_full.json"
 
 def load_data(dataset_path):
@@ -64,6 +62,19 @@ def build_model(input_shape):
     # output layer
     model.add(keras.layers.Dense(10, activation='softmax'))
 
+    return model
+
+def predict(model, X, y):
+
+    X = X[np.newaxis, ...]
+
+    # prediction is 2d array [ [0.1, 0.2,...] ] values represent scores for 10 genres
+    prediction = model.predict(X) # X -> (1, 130, 13, 1) first index is number of predictions
+
+    # extract index with max value
+    predicted_index = np.argmax(prediction, axis=1)
+    print("The expected index is {}, and the predicted index is {}".format(y, predicted_index))
+
 if __name__ == "__main__":
 
     # create the train, validation, and test sets
@@ -74,10 +85,18 @@ if __name__ == "__main__":
     model = build_model(input_shape)
 
     # compile network
+    optimizer = keras.optimizers.Adam(learning_rate=0.0001)
+    model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
     # train network
+    model.fit(X_train, y_train, validation_data=(X_validation, y_validation), batch_size=32, epochs=30)
 
     # evaluate the CNN on the test set
+    test_error, test_accuracy = model.evaluate(X_test, y_test, verbose=1)
+    print("Accuracy on test set: {}".format(test_accuracy))
 
     # make prediction on a sample
+    X = X_test[100]
+    y = y_test[100]
+    predict(model, X, y)
 
